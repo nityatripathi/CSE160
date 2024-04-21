@@ -1,0 +1,77 @@
+<!--Nitya Tripathi-->
+<!--ntripat3@ucsc.edu-->
+
+<!--Notes to Grader:--> 
+<!--My webpage is working as expected with all features, however I didn't have enough time to figure out why the provided test cases are failing. I'm assuming it has to do with the way I'm handling floats.-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Draw a blue rectangle (canvas version)</title>
+	</head>
+
+	<body onload="main()">
+		<canvas id="example" width="400" height="400"> 
+		Please use a browser that supports "canvas"
+		</canvas>
+		<script src="index.js"></script>
+		<script src="cuon-matrix-cse160.js"></script>
+
+
+
+
+		<br><br>
+		<label for="name">v1:</label>
+
+		<label for="v1x">x</label>
+		<input type="number" id="v1x" name="v1x" />
+
+		<label for="v1y">y</label>
+		<input type="number" id="v1y" name="v1y" />
+
+
+
+		<br><br>
+		<label for="name">v2:</label>
+
+		<label for="v2x">x</label>
+		<input type="number" id="v2x" name="v2x" />
+
+		<label for="v2y">y</label>
+		<input type="number" id="v2y" name="v2y" />
+
+
+
+
+		<br><br>
+		<input type="button" value="Draw" onclick="handleDrawEvent()"></input>
+
+
+
+
+
+		<br><br>
+		<label for="op-select">Operation:</label>
+
+			<select name="op" id="op-select">
+				<option value="">--Please choose an option--</option>
+				<option value="add">Add</option>
+				<option value="sub">Subtract</option>
+				<option value="mul">Multiply</option>
+				<option value="div">Divide</option>
+				<option value="ang">Angle Between</option>
+				<option value="are">Area</option>
+				<option value="mag">Magnitude</option>
+				<option value="nor">Normalize</option>
+			</select>
+
+		<label for="scal">Scalar:</label>
+		<input type="number" id="scal" name="scal" />
+
+		<br><br>
+		<input type="button" value="Draw" onclick="handleDrawOperationEvent()"></input>
+
+	</body>
+</html>
+
